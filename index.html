@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat|Modak&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
@@ -14,16 +15,37 @@
 
         <form action="add-task">
 
-            <input class="add-task__text" type="text" name="new-task" id="inserido" placeholder="Digite aqui sua tarefa">
-            <button type="button" class="add-task__action" onclick="adicionar()">add</button>
+            <input class="add-task__text" type="text" name="new-task" id="inserido" placeholder="Digite aqui sua tarefa" required >
+            <button type="submit" class="add-task__action" onclick="adicionar()">add</button>
 
         </form>
 
         <ul id="list" class="task-list">
-            <li class="task-list__item">estudar html</li>
-            <li class="task-list__item">estudar css</li>
-            <li class="task-list__item">estudar bootstrap</li>
-            <li class="task-list__item">fazer atividade de lista de tarefas</li>
+            <li class="task-list__item">
+                estudar 
+                <button class="task-list__action"  type="button">
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </li>
+
+            <li class="task-list__item">
+                estudar css
+                <button class="task-list__action"  type="button">
+                    <i class="far fa-check-circle"></i>
+                </button>
+            </li>
+            <li class="task-list__item">
+                estudar bootstrap
+                <button class="task-list__action" type="button">
+                    <i class="far fa-check-circle"></i>
+                </button>
+            </li>
+            <li class="task-list__item">
+                fazer atividade de lista de tarefas
+                <button class="task-list__action" type="button">
+                    <i class="far fa-check-circle"></i>
+                </button>
+            </li>
         </ul>
     </main>
 
@@ -32,7 +54,8 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+    crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>
